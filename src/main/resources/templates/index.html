@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+</head>
+<style>
+    body{
+        background-color: #022e4b;
+    }
+    .main{
+        padding-top: 70px;
+        text-align: center;
+    }
+    .title{
+        color: #FFFFFF;
+        font-size: 38px;
+    }
+    .introduce{
+        color: #FFFFFF;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+</style>
+<body>
+<div class="main">
+    <div class="logo"><img width="400" src="logo.jpg" /></div>
+    <div class="title">AGV应用</div>
+    <div class="introduce">AGV应用是一个为顺德图书馆应用实现手机微信扫一扫登陆的平台</div>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'form'], function(){
+        var layer = layui.layer
+            ,form = layui.form;
+
+        layer.msg('Hello World');
+    });
+</script>
+</body>
+</html>
